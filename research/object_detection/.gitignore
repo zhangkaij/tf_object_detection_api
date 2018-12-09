@@ -129,7 +129,6 @@ data/ssd_dataloader.py
 coco_testdev.record*
 coco_train.record*
 coco_val.record*
-*.record.*
 
 #pet dataset
 pet_faces_train*
@@ -139,9 +138,9 @@ pet_faces_val*
 model.ckpt*
 *.tar.gz
 *.pb
+*.ckpt.data*
 ssd_mobilenet_v2_coco/
 ssd_resnet50_v1_fpn/
-*.ckpt.*
 #
 
 

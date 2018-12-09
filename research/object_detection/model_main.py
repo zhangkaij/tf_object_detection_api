@@ -26,12 +26,12 @@ from object_detection import model_hparams
 from object_detection import model_lib
 
 flags.DEFINE_string(
-    'model_dir', 'object_detection/models/ssd_resnet50_v1_fpn/saved_model/', 'Path to output model directory '
+    'model_dir', 'object_detection/models/ssd_mobilenet_v1_coco/saved_model/', 'Path to output model directory '
     'where event and checkpoint files will be written.')
 flags.DEFINE_string('pipeline_config_path', 
-                    'object_detection/models/ssd_resnet50_v1_fpn/pipeline.config', 
+                    'object_detection/models/ssd_mobilenet_v1_coco/pipeline.config', 
                     'Path to pipeline config file.')
-flags.DEFINE_integer('num_train_steps', 25000, 'Number of train steps.')
+flags.DEFINE_integer('num_train_steps', 200000, 'Number of train steps.')
 flags.DEFINE_boolean('eval_training_data', False,
                      'If training data should be evaluated for this job. Note '
                      'that one call only use this in eval-only mode, and '
